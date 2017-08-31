@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.james.lab1.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 1"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_alignBaseline="@+id/quiz1"
+        android:layout_alignBottom="@+id/quiz1"
+        android:layout_alignLeft="@+id/btncompute"
+        android:layout_alignStart="@+id/btncompute" />
+
+
+    <EditText
+        android:id="@+id/quiz1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@android:color/holo_blue_bright" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 2"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/quiz2"
+        android:layout_alignBottom="@+id/quiz2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:id="@+id/quiz2"
+        android:layout_width="100dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quiz1"
+        android:layout_alignLeft="@+id/quiz1"
+        android:layout_alignStart="@+id/quiz1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seatworks"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/seatworks"
+        android:layout_alignBottom="@+id/seatworks"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/seatworks"
+        android:layout_width="100dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quiz2"
+        android:layout_alignLeft="@+id/quiz2"
+        android:layout_alignStart="@+id/quiz2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Exercises"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/labex"
+        android:layout_alignBottom="@+id/labex"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/labex"
+        android:layout_width="100dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seatworks"
+        android:layout_alignLeft="@+id/seatworks"
+        android:layout_alignStart="@+id/seatworks" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major Exam"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/majorexam"
+        android:layout_alignBottom="@+id/majorexam"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/majorexam"
+        android:layout_width="100dp"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="76dp"
+        android:layout_marginEnd="76dp" />
+
+
+    <Button
+        android:id="@+id/btncompute"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        android:backgroundTint="#ff3d00"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="callSecondActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="146dp" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.james.lab1.SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your RA is: "
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:id="@+id/yourrais"
+        android:layout_alignTop="@+id/rawaverage"
+        android:layout_alignRight="@+id/yourfinalgradeis"
+        android:layout_alignEnd="@+id/yourfinalgradeis" />
+
+    <TextView
+        android:id="@+id/rawaverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/finalgrade"
+        android:layout_toRightOf="@+id/finalgrade" />
+
+    <TextView
+        android:id="@+id/yourfinalgradeis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Final Grade is: "
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignTop="@+id/finalgrade"
+        android:layout_toLeftOf="@+id/finalgrade"
+        android:layout_toStartOf="@+id/finalgrade" />
+
+    <TextView
+        android:id="@+id/finalgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:backgroundTint="#ff3d00"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/btnBack"
+        android:onClick="goBackToMain"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
