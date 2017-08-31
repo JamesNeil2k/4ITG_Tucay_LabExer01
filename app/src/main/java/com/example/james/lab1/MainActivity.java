@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (rawave>=93 && rawave<=94) {
             finalgradeeq = "1.25";
         } else  if (rawave>95){
-            finalgradeeq = "5.0";
+            finalgradeeq = "1.0";
         }
 
         intent.putExtra("rawaverage", Double.toString(rawave));
